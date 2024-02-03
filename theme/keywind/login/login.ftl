@@ -17,7 +17,9 @@
   section
 >
   <#if section="header">
+  <div class="text-white">
     ${msg("loginAccountTitle")}
+    </div>
   <#elseif section="form">
     <#if realm.password>
       <@form.kw
@@ -58,7 +60,9 @@
             </#if>
             <#if realm.resetPasswordAllowed>
               <@link.kw color="primary" href=url.loginResetCredentialsUrl size="small">
+                <div class="text-main-100">
                 ${msg("doForgotPassword")}
+                </div>
               </@link.kw>
             </#if>
           </div>
@@ -72,10 +76,12 @@
     </#if>
   <#elseif section="info">
     <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
-      <div class="text-center">
+      <div class="text-center text-white">
         ${msg("noAccount")}
         <@link.kw color="primary" href=url.registrationUrl>
+          <div class="text-main-100">
           ${msg("doRegister")}
+          </div>
         </@link.kw>
       </div>
     </#if>

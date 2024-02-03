@@ -19,9 +19,9 @@
   showAnotherWayIfPresent=true
 >
   <#assign cardHeader>
-    <@logo.kw>
+    <#--  <@logo.kw>
       ${kcSanitize(msg("loginTitleHtml", (realm.displayNameHtml!"")))?no_esc}
-    </@logo.kw>
+    </@logo.kw>  -->
     <#if !(auth?has_content && auth.showUsername() && !auth.showResetCredentials())>
       <@heading.kw>
         <#nested "header">
@@ -44,7 +44,7 @@
     </#if>
     <#nested "form">
     <#if displayRequiredFields>
-      <p class="text-secondary-600 text-sm">
+      <p class="text-white text-sm">
         * ${msg("requiredFields")}
       </p>
     </#if>

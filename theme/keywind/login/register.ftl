@@ -11,7 +11,9 @@
   section
 >
   <#if section="header">
+    <div class="text-white">
     ${msg("registerTitle")}
+    </div>
   <#elseif section="form">
     <@form.kw action=url.registrationAction method="post">
       <@input.kw
@@ -76,7 +78,9 @@
       </#if>
       <@buttonGroup.kw>
         <@button.kw color="primary" type="submit">
+
           ${msg("doRegister")}
+
         </@button.kw>
       </@buttonGroup.kw>
     </@form.kw>

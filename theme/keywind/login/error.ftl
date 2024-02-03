@@ -4,7 +4,9 @@
 
 <@layout.registrationLayout displayMessage=false; section>
   <#if section="header">
+  <div class="text-white">
     ${kcSanitize(msg("errorTitle"))?no_esc}
+    </div>
   <#elseif section="form">
     <@alert.kw color="error">${kcSanitize(message.summary)?no_esc}</@alert.kw>
     <#if !skipLink??>

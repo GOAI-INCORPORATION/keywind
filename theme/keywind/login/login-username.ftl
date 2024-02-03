@@ -17,7 +17,9 @@
   section
 >
   <#if section="header">
+    <div class="text-white">
     ${msg("loginAccountTitle")}
+    </div>
   <#elseif section="form">
     <#if realm.password>
       <@form.kw

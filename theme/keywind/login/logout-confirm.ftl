@@ -5,7 +5,9 @@
 
 <@layout.registrationLayout; section>
   <#if section="header">
+    <div class="text-white">
     ${msg("logoutConfirmTitle")}
+    </div>
   <#elseif section="form">
     <p>${msg("logoutConfirmHeader")}</p>
     <@form.kw action=url.logoutConfirmAction method="post">

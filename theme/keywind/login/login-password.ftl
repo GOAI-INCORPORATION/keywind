@@ -7,7 +7,9 @@
 
 <@layout.registrationLayout displayMessage=!messagesPerField.existsError("password"); section>
   <#if section="header">
+    <div class="text-white">
     ${msg("doLogIn")}
+    </div>
   <#elseif section="form">
     <@form.kw
       action=url.loginAction

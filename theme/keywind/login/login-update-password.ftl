@@ -11,7 +11,9 @@
   section
 >
   <#if section="header">
+    <div class="text-white">
     ${msg("updatePasswordTitle")}
+    </div>
   <#elseif section="form">
     <@form.kw action=url.loginAction method="post">
       <input

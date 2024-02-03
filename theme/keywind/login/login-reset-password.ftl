@@ -15,7 +15,9 @@
   section
 >
   <#if section="header">
+    <div class="text-white">
     ${msg("emailForgotTitle")}
+    </div>
   <#elseif section="form">
     <@form.kw action=url.loginAction method="post">
       <@input.kw
@@ -35,7 +37,9 @@
       </@buttonGroup.kw>
     </@form.kw>
   <#elseif section="info">
+    <div class="text-white">
     ${msg("emailInstruction")}
+    </div>
   <#elseif section="nav">
     <@link.kw color="secondary" href=url.loginUrl size="small">
       ${kcSanitize(msg("backToLogin"))?no_esc}

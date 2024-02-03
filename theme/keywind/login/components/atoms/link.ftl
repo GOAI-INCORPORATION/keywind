@@ -1,13 +1,13 @@
 <#macro kw color="" component="a" size="" rest...>
   <#switch color>
     <#case "primary">
-      <#assign colorClass="text-primary-600 hover:text-primary-500">
+      <#assign colorClass="text-white">
       <#break>
     <#case "secondary">
-      <#assign colorClass="text-secondary-600 hover:text-secondary-900">
+      <#assign colorClass="text-white">
       <#break>
     <#default>
-      <#assign colorClass="text-primary-600 hover:text-primary-500">
+      <#assign colorClass="text-white">
   </#switch>
 
   <#switch size>

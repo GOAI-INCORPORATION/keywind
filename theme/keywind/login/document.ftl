@@ -16,7 +16,7 @@
       <link href="${url.resourcesPath}/${favicon?split('==')[0]}" rel="${favicon?split('==')[1]}">
     </#list>
   </#if>
-
+  
   <#if properties.styles?has_content>
     <#list properties.styles?split(" ") as style>
       <link href="${url.resourcesPath}/${style}" rel="stylesheet">
