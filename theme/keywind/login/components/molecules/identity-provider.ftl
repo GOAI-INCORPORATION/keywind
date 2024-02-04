@@ -59,7 +59,7 @@
           <#assign colorClass="hover:bg-provider-twitter/10">
           <#break>
         <#default>
-          <#assign colorClass="hover:bg-secondary-100">
+          <#assign colorClass="hover:bg-white">
       </#switch>
 
       <a
