@@ -63,7 +63,7 @@
       </#switch>
 
       <a
-        class="${colorClass} border border-secondary-100 flex justify-center py-2 rounded-lg hover:border-transparent"
+        class="${colorClass} border border-secondary-100 bg-white flex justify-center py-2 rounded-lg hover:border-transparent"
         data-provider="${provider.alias}"
         href="${provider.loginUrl}"
         type="button"
