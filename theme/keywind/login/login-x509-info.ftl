@@ -6,13 +6,13 @@
 
 <@layout.registrationLayout; section>
   <#if section = "header">
-    <div class="text-white">
+    <div class="text-neutral-100">
     ${msg("doLogIn")}
     </div>
   <#elseif section = "form">
     <div>
       <div>${msg("clientCertificate")}</div>
-      <div class="text-white">
+      <div class="text-neutral-100">
         <#if x509.formData.subjectDN??>
           ${(x509.formData.subjectDN!"")}
         <#else>

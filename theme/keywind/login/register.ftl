@@ -11,7 +11,7 @@
   section
 >
   <#if section="header">
-    <div class="text-white">
+    <div class="text-neutral-100">
     ${msg("registerTitle")}
     </div>
   <#elseif section="form">
@@ -85,7 +85,7 @@
       </@buttonGroup.kw>
     </@form.kw>
   <#elseif section="nav">
-    <@link.kw color="secondary" href=url.loginUrl size="small">
+    <@link.kw color="primary" href=url.loginUrl size="small">
       ${kcSanitize(msg("backToLogin"))?no_esc}
     </@link.kw>
   </#if>

@@ -15,7 +15,7 @@
   section
 >
   <#if section="header">
-    <div class="text-white">
+    <div class="text-neutral-100">
     ${msg("emailForgotTitle")}
     </div>
   <#elseif section="form">
@@ -37,7 +37,7 @@
       </@buttonGroup.kw>
     </@form.kw>
   <#elseif section="info">
-    <div class="text-white">
+    <div class="text-neutral-100 text-sm text-center">
     ${msg("emailInstruction")}
     </div>
   <#elseif section="nav">

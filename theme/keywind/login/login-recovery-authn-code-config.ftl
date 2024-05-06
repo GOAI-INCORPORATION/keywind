@@ -7,7 +7,7 @@
 
 <@layout.registrationLayout script="dist/recoveryCodes.js"; section>
   <#if section="header">
-    <div class="text-white">
+    <div class="text-neutral-100">
     ${msg("recovery-code-config-header")}
     </div>
   <#elseif section="form">

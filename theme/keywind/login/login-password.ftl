@@ -7,7 +7,7 @@
 
 <@layout.registrationLayout displayMessage=!messagesPerField.existsError("password"); section>
   <#if section="header">
-    <div class="text-white">
+    <div class="text-neutral-100">
     ${msg("doLogIn")}
     </div>
   <#elseif section="form">

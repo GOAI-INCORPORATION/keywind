@@ -6,7 +6,7 @@
 
 <@layout.registrationLayout; section>
   <#if section="header">
-    <div class="text-white">
+    <div class="text-neutral-100">
     ${msg("auth-recovery-code-header")}
     </div>
   <#elseif section="form">

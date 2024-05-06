@@ -10,7 +10,7 @@
   section
 >
   <#if section="header">
-    <div class="text-white">
+    <div class="text-neutral-100">
     ${msg("loginProfileTitle")}
     </div>
   <#elseif section="form">

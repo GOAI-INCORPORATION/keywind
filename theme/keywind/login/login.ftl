@@ -17,7 +17,7 @@
   section
 >
   <#if section="header">
-  <div class="text-white">
+  <div class="text-neutral-100">
     ${msg("loginAccountTitle")}
     </div>
   <#elseif section="form">
@@ -50,7 +50,7 @@
           type="password"
         />
         <#if realm.rememberMe && !usernameEditDisabled?? || realm.resetPasswordAllowed>
-          <div class="flex items-center justify-between">
+          <div class="flex items-center justify-between text-sm text-neutral-100">
             <#if realm.rememberMe && !usernameEditDisabled??>
               <@checkbox.kw
                 checked=login.rememberMe??
@@ -76,7 +76,7 @@
     </#if>
   <#elseif section="info">
     <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
-      <div class="text-center text-white">
+      <div class="text-center text-sm text-neutral-100">
         ${msg("noAccount")}
         <@link.kw color="primary" href=url.registrationUrl>
           <div class="text-main-100">
