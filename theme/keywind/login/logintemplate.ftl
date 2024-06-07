@@ -1,6 +1,6 @@
 <#import "document.ftl" as document>
 <#import "components/atoms/alert.ftl" as alert>
-<#import "components/atoms/registrationbody.ftl" as body>
+<#import "components/atoms/loginbody.ftl" as loginbody>
 <#import "components/atoms/button.ftl" as button>
 <#import "components/atoms/card.ftl" as card>
 <#import "components/atoms/container.ftl" as container>
@@ -11,7 +11,7 @@
 <#import "components/molecules/username.ftl" as username>
 
 <#macro
-  registrationLayout
+  loginLayout
   displayInfo=false
   displayMessage=true
   displayRequiredFields=false
@@ -70,7 +70,7 @@
     <head>
       <@document.kw script=script />
     </head>
-    <@body.kw>
+    <@loginbody.kw>
       <@container.kw>
         <@card.kw content=cardContent footer=cardFooter header=cardHeader />
         <@nav.kw>
@@ -80,7 +80,7 @@
           </#if>
         </@nav.kw>
       </@container.kw>
-    </@body.kw>
+    </@loginbody.kw>
   </html>
 
 </#macro>

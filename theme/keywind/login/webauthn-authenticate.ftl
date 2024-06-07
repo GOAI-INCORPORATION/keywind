@@ -1,8 +1,8 @@
-<#import "template.ftl" as layout>
+<#import "logintemplate.ftl" as layout>
 <#import "components/atoms/button.ftl" as button>
 <#import "components/atoms/button-group.ftl" as buttonGroup>
 
-<@layout.registrationLayout script="dist/webAuthnAuthenticate.js"; section>
+<@layout.loginLayout script="dist/webAuthnAuthenticate.js"; section>
   <#if section="title">
     title
   <#elseif section="header">
@@ -55,7 +55,7 @@
       </@buttonGroup.kw>
     </div>
   </#if>
-</@layout.registrationLayout>
+</@layout.loginLayout>
 
 <script>
   document.addEventListener('alpine:init', () => {
