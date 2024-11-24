@@ -1,13 +1,13 @@
 <#macro kw color="" component="button" size="" rest...>
   <#switch color>
     <#case "primary">
-      <#assign colorClass="bg-main-100 text-white focus:ring-white hover:bg-teal-800">
+      <#assign colorClass="bg-neutral-100 text-white focus:ring-white hover:bg-zinc-800">
       <#break>
     <#case "secondary">
-      <#assign colorClass="bg-main-100 text-white focus:ring-white hover:bg-teal-800">
+      <#assign colorClass="bg-neutral-100 text-white focus:ring-white hover:bg-zinc-800">
       <#break>
     <#default>
-      <#assign colorClass="bg-main-100 text-white focus:ring-white hover:bg-teal-800 hover:text-white">
+      <#assign colorClass="bg-neutral-100 text-white focus:ring-white hover:bg-zinc-800 hover:text-white">
   </#switch>
 
   <#switch size>

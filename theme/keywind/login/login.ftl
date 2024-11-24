@@ -17,9 +17,7 @@
                     section>
                     <#if section="header">
                       <div class="text-neutral-100 space-y-2">
-                        <div class="font-sheriff text-[32px]
- text-center">Sign in to your account</div>
-                        <div class="font-inter text-center text-[16px]
+                        <div class="text-center text-[16px]
  text-cente text-neutral-600">Enter your details to login.</div>
                       </div>
                       <#elseif section="form">
@@ -59,7 +57,7 @@ ${auth.selectedCredential}
                                 </#if>
                                 <#if realm.resetPasswordAllowed>
                                   <@link.kw color="primary" href=url.loginResetCredentialsUrl size="small">
-                                    <div class="text-main-100">
+                                    <div class="text-neutral-100">
                                       ${msg("doForgotPassword")}
                                     </div>
                                   </@link.kw>

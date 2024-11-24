@@ -10,9 +10,7 @@
               section>
               <#if section="header">
                 <div class="text-neutral-100 space-y-2">
-                  <div class="font-sheriff text-[32px]
- text-center">Create your account</div>
-                  <div class="font-inter text-center text-[16px]
+                  <div class="text-center text-[16px]
  text-cente text-neutral-600">Enter your details to register.</div>
                 </div>
                 <#elseif section="form">
