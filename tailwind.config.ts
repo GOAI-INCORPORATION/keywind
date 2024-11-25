@@ -26,7 +26,7 @@ export default {
         primary: { 100: '	#f5f7fA' },
         secondary: { 100: '#ececec' },
         tetiary: { 100: '#e1e1e1' },
-        main: { 100: '#53ADA2' },
+        main: { 100: '#27272a' },
         provider: {
           apple: '#000000',
           bitbucket: '#0052CC',
