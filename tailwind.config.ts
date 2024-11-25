@@ -46,10 +46,6 @@ export default {
           twitter: '#1DA1F2',
         },
       },
-      fontFamily: {
-        sheriff: ['Instrument Serif', 'instrument-serif'],
-        inter: ['Inter', 'inter'],
-      },
     },
   },
 } satisfies Config;
